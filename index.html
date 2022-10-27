@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <title>Facebook</title>
+</head>
+
+<body class="bg-neutral-800 text-white  ">
+    <nav class="py-2 px-3 flex sticky top-0 z-20 overflow-hidden md:items-center md:justify-between flex-col md:flex-row md:bg-neutral-700">
+        <div class="left logo flex justify-between items-center">
+            <span class="flex items-center space-x-2">
+            <img class="h-10" src="/img/logo.png" alt="facebook">
+            <div class="search-box px-5 flex items-center bg-slate-800 rounded-2xl">
+                <ion-icon name="search-outline"></ion-icon>
+                <input class="py-2 px-3 outline-none  bg-slate-800 rounded-2xl" type="search" placeholder="Search Facebook">
+            </div>
+        </span>
+            <div class="icon text-4xl md:hidden">
+                <ion-icon name="menu-outline"></ion-icon>
+            </div>
+        </div>
+
+        <div class="mblversion md:hidden my-4 px-6">
+            <ul class=" flex space-x-6 items-center justify-between divide-x-2 ">
+                <li class="text-3xl text-white hover:text-blue-600 duration-500 cursor-pointer">
+                    <a href="#">
+                        <ion-icon name="home-outline"></ion-icon>
+                    </a>
+                </li>
+                <li class="text-3xl text-white hover:text-blue-600 duration-500 cursor-pointer">
+                    <a href="#">
+                        <ion-icon name="person-add-outline"></ion-icon>
+                    </a>
+                </li>
+                <li class="text-3xl text-white hover:text-blue-600 duration-500 cursor-pointer">
+                    <a href="#">
+                        <ion-icon name="mail-open-outline"></ion-icon>
+                    </a>
+                </li>
+                <li class="text-3xl text-white hover:text-blue-600 duration-500 cursor-pointer">
+                    <a href="#">
+                        <ion-icon name="videocam-outline"></ion-icon>
+
+                    </a>
+                </li>
+                <li class="text-3xl text-white hover:text-blue-600 duration-500 cursor-pointer">
+                    <a href="#">
+                        <ion-icon name="notifications-outline"></ion-icon>
+
+                    </a>
+                </li>
+                <li class="text-3xl text-white hover:text-blue-600 duration-500 cursor-pointer">
+                    <a href="#">
+                        <ion-icon name="person-circle-outline"></ion-icon>
+                    </a>
+                </li>
+            </ul>
+            <hr class="bg-black w-full my-2">
+        </div>
+
+        <div class="middle hidden md:block">
+            <ul class="flex space-x-20">
+                <li class="text-3xl text-white hover:text-blue-600 duration-500 cursor-pointer">
+                    <a href="#">
+                        <ion-icon name="home-outline"></ion-icon>
+                    </a>
+                </li>
+                <li class="text-3xl text-white hover:text-blue-600 duration-500 cursor-pointer">
+                    <a href="#">
+                        <ion-icon name="videocam-outline"></ion-icon>
+                    </a>
+                </li>
+                <li class="text-3xl text-white hover:text-blue-600 duration-500 cursor-pointer">
+                    <a href="#">
+                        <ion-icon name="card-outline"></ion-icon>
+                    </a>
+                </li>
+                <li class="text-3xl text-white hover:text-blue-600 duration-500 cursor-pointer">
+                    <a href="#">
+                        <ion-icon name="people-outline"></ion-icon>
+                    </a>
+                </li>
+
+                <li class="text-3xl text-white hover:text-blue-600 duration-500 cursor-pointer">
+                    <a href="#">
+                        <ion-icon name="game-controller-outline"></ion-icon>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="right  space-x-4 mr-10 hidden md:flex">
+            <span class="items">
+                <ion-icon name="grid-outline"></ion-icon>
+            </span>
+            <span class="items">
+                <ion-icon name="mail-open-outline"></ion-icon>
+            </span>
+
+            <span class="items">
+                <ion-icon name="notifications-outline"></ion-icon>
+            </span>
+
+            <span class="items">
+                <ion-icon name="person-circle-outline"></ion-icon>
+            </span>
+        </div>
+    </nav>
+
+
+    <div class="container   mx-auto w-[80%] md:w-fit py-3 flex flex-col ">
+        <!-- POST CONTAINER -->
+        <div class="createPost md:order-2 md:bg-neutral-700  md:my-2 md:w-fit md:mx-auto md:px-8 md:py-4 md:rounded-lg">
+            <div class="upperpart px-6 flex justify-between md:justify-center md:space-x-3 items-center">
+                <img class="h-12 rounded-full" src="img/user.jpg" alt="user">
+                <input class="py-4 text-white md:bg-neutral-600 md:w-full  px-5 rounded-2xl bg-neutral-700" type="text" placeholder="What's on your mind? ">
+                <span class="text-4xl md:hidden">
+                    <ion-icon name="image-outline" ></ion-icon>
+                </span>
+            </div>
+            <hr class="w-auto mx-auto my-2">
+            <div class="lowerpart hidden md:flex justify-center gap-2 items-center">
+
+                <span class="text-3xl flex space-x-2 items-center justify-center ">
+                    <ion-icon name="videocam-outline"></ion-icon>
+                    <p class="text-sm cursor-pointer hover:bg-neutral-400 px-4 py-2 rounded-xl font-semibold duration-300">Live video</p>
+                </span>
+                <span class="text-3xl flex space-x-2 items-center justify-center">
+                    <ion-icon name="image-outline" ></ion-icon>
+                    <p class="text-sm cursor-pointer hover:bg-neutral-400 px-4 py-2 rounded-xl font-semibold duration-300">Photo/video</p>
+                </span>
+                <span class="text-3xl flex space-x-2 items-center justify-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M15.182 15.182a4.5 4.5 0 01-6.364 0M21 12a9 9 0 11-18 0 9 9 0 0118 0zM9.75 9.75c0 .414-.168.75-.375.75S9 10.164 9 9.75 9.168 9 9.375 9s.375.336.375.75zm-.375 0h.008v.015h-.008V9.75zm5.625 0c0 .414-.168.75-.375.75s-.375-.336-.375-.75.168-.75.375-.75.375.336.375.75zm-.375 0h.008v.015h-.008V9.75z" />
+                      </svg>
+                    <p  class="text-sm cursor-pointer hover:bg-neutral-400 px-4 py-2 rounded-xl font-semibold duration-300">Feeling/activity</p>                      
+                </span>
+            </div>
+        </div>
+
+        <div class="story-box z-10  flex items-center mx-auto md:order-1  md:w-full  gap-3 ">
+            <div class="img-box relative  ">
+                <img class="h-44 w-28 bg-center  relative rounded mx-2" src="img/user.jpg" alt="">
+                <p class="absolute bottom-1 text-center left-3 rounded-md bg-neutral-700 w-[80%] mx-auto py-6  text-sm font-bold ">Add to story</p>
+                <span class="counter absolute bottom-16 left-10 bg-blue-700 text-white py-1 px-2 rounded-full">+</span>
+            </div>
+            <div class="img-box relative md:block hidden ">
+                <img class="h-44 w-28 bg-center relative bg-no-repeat rounded mx-2" src="img/maya.jpg" alt="">
+                <p class="absolute bottom-1 left-3 text-sm font-bold ">Sus Meeta</p>
+                <span class="counter absolute top-0 left-20 bg-blue-700 text-white p-2 rounded-lg">2</span>
+            </div>
+            <div class="img-box relative ">
+                <img class="h-44 w-28 bg-center relative rounded mx-2" src="img/user-1.jpg" alt="">
+                <p class="absolute bottom-1 left-3 text-sm font-bold ">Rajesh Rana</p>
+                <span class="counter absolute top-0 left-20 bg-blue-700 text-white p-2 rounded-lg">2</span>
+            </div>
+
+            <div class="img-box relative ">
+                <img class="h-44 w-28 bg-center relative rounded mx-2" src="img/user2.jpg" alt="">
+                <p class="absolute bottom-1 left-3 text-sm font-bold ">Ranjan Rana</p>
+                <span class="counter absolute top-0 left-20 bg-blue-700 text-white p-2 rounded-lg">10</span>
+            </div>
+
+        </div>
+
+        <!-- Main post -->
+        <div class="post-container w-fit space-y-2 bg-neutral-900 mx-auto rounded-md bg-dark md:order-3 ">
+            <!-- Faceboook-posts -->
+            <div class="posts bg-neutral-700   ">
+                <div class="posts-heading">
+                    <div class="img flex">
+                        <img class="h-10 w-10 object-cover m-2 rounded-full" src="img/user-1.jpg" alt="">
+                        <div class="post-name text-lg">
+                            <p>Rajesh Rana</p>
+                            <div class="item flex items-center gap-2 text-lg">
+                                <p>2h</p>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M15 19.128a9.38 9.38 0 002.625.372 9.337 9.337 0 004.121-.952 4.125 4.125 0 00-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 018.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0111.964-3.07M12 6.375a3.375 3.375 0 11-6.75 0 3.375 3.375 0 016.75 0zm8.25 2.25a2.625 2.625 0 11-5.25 0 2.625 2.625 0 015.25 0z" />
+                              </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <!-- Reference -->
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M8.625 12a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H8.25m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H12m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0h-.375M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                    </div>
+                </div>
+                <h2 class="mx-4 my-2 text-lg">Post description</h2>
+
+                <div class="post-body mx-auto ">
+                    <img class="w-fit h-fit mx-auto" src="/img/posts/post1.jpg" alt="">
+                </div>
+                <div class="reaction ">
+                    <div class="react-name px-3 py-2 flex justify-between">
+                        <div class="react-box flex items-center gap-1">
+                            <img class="h-6  rounded-full" src="/img/react/haha.png" alt="">
+                            <img class="h-6  rounded-full" src="/img/react/care.png" alt="">
+                            <p class="text-base">20 other</p>
+
+                        </div>
+                        <div class="comment-count p-1">
+                            25 comment
+                        </div>
+                    </div>
+                </div>
+                <hr class="w-full my-2">
+                <div class="react-box">
+                    <div class="section flex justify-between px-4 py-3 capitalize gap-1">
+                        <div class="like flex items-center gap-2 px-3 rounded-lg py-2 hover:bg-neutral-500 w-full duration-300 cursor-pointer">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M6.633 10.5c.806 0 1.533-.446 2.031-1.08a9.041 9.041 0 012.861-2.4c.723-.384 1.35-.956 1.653-1.715a4.498 4.498 0 00.322-1.672V3a.75.75 0 01.75-.75A2.25 2.25 0 0116.5 4.5c0 1.152-.26 2.243-.723 3.218-.266.558.107 1.282.725 1.282h3.126c1.026 0 1.945.694 2.054 1.715.045.422.068.85.068 1.285a11.95 11.95 0 01-2.649 7.521c-.388.482-.987.729-1.605.729H13.48c-.483 0-.964-.078-1.423-.23l-3.114-1.04a4.501 4.501 0 00-1.423-.23H5.904M14.25 9h2.25M5.904 18.75c.083.205.173.405.27.602.197.4-.078.898-.523.898h-.908c-.889 0-1.713-.518-1.972-1.368a12 12 0 01-.521-3.507c0-1.553.295-3.036.831-4.398C3.387 10.203 4.167 9.75 5 9.75h1.053c.472 0 .745.556.5.96a8.958 8.958 0 00-1.302 4.665c0 1.194.232 2.333.654 3.375z" />
+                              </svg>
+
+                            <p>like</p>
+                        </div>
+                        <div class="comment flex items-center gap-2 px-3 rounded-lg py-2 hover:bg-neutral-500 w-full duration-300 cursor-pointer">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12.76c0 1.6 1.123 2.994 2.707 3.227 1.068.157 2.148.279 3.238.364.466.037.893.281 1.153.671L12 21l2.652-3.978c.26-.39.687-.634 1.153-.67 1.09-.086 2.17-.208 3.238-.365 1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0012 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018z" />
+                              </svg>
+
+                            <p>comment</p>
+                        </div>
+                        <div class="share flex items-center gap-2 px-3 rounded-lg py-2 hover:bg-neutral-500 w-full duration-300 cursor-pointer">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M7.217 10.907a2.25 2.25 0 100 2.186m0-2.186c.18.324.283.696.283 1.093s-.103.77-.283 1.093m0-2.186l9.566-5.314m-9.566 7.5l9.566 5.314m0 0a2.25 2.25 0 103.935 2.186 2.25 2.25 0 00-3.935-2.186zm0-12.814a2.25 2.25 0 103.933-2.185 2.25 2.25 0 00-3.933 2.185z" />
+                              </svg>
+
+                            <p>share</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="posts  bg-neutral-700 ">
+                <div class="posts-heading">
+                    <div class="img flex">
+                        <img class="h-10 m-2 rounded-full" src="img/user.jpg" alt="">
+                        <div class="post-name text-lg">
+                            <p>Itachi Uchiha</p>
+                            <div class="item flex items-center gap-2 text-lg">
+                                <p>1d</p>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M15 19.128a9.38 9.38 0 002.625.372 9.337 9.337 0 004.121-.952 4.125 4.125 0 00-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 018.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0111.964-3.07M12 6.375a3.375 3.375 0 11-6.75 0 3.375 3.375 0 016.75 0zm8.25 2.25a2.625 2.625 0 11-5.25 0 2.625 2.625 0 015.25 0z" />
+                              </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <!-- Reference -->
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M8.625 12a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H8.25m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H12m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0h-.375M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                    </div>
+                </div>
+                <h2 class="mx-4 my-2 text-lg">Mangekyu sharingan</h2>
+
+                <div class="post-body mx-auto ">
+                    <img class="w-[38vw]  mx-auto" src="/img/posts/post3.jpg" alt="">
+
+                </div>
+                <div class="reaction ">
+                    <div class="react-name px-3 py-2 flex justify-between">
+                        <div class="react-box flex items-center gap-1">
+                            <img class="h-6  rounded-full" src="/img/react/haha.png" alt="">
+                            <img class="h-6  rounded-full" src="/img/react/care.png" alt="">
+                            <p class="text-base">2k others</p>
+
+                        </div>
+                        <div class="comment-count p-1">
+                            1k comments
+                        </div>
+                    </div>
+                </div>
+                <hr class="w-full my-2">
+                <div class="react-box">
+                    <div class="section flex justify-between px-4 py-3 capitalize gap-1">
+                        <div class="like flex items-center gap-2 px-3 rounded-lg py-2 hover:bg-neutral-500 w-full duration-300 cursor-pointer">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M6.633 10.5c.806 0 1.533-.446 2.031-1.08a9.041 9.041 0 012.861-2.4c.723-.384 1.35-.956 1.653-1.715a4.498 4.498 0 00.322-1.672V3a.75.75 0 01.75-.75A2.25 2.25 0 0116.5 4.5c0 1.152-.26 2.243-.723 3.218-.266.558.107 1.282.725 1.282h3.126c1.026 0 1.945.694 2.054 1.715.045.422.068.85.068 1.285a11.95 11.95 0 01-2.649 7.521c-.388.482-.987.729-1.605.729H13.48c-.483 0-.964-.078-1.423-.23l-3.114-1.04a4.501 4.501 0 00-1.423-.23H5.904M14.25 9h2.25M5.904 18.75c.083.205.173.405.27.602.197.4-.078.898-.523.898h-.908c-.889 0-1.713-.518-1.972-1.368a12 12 0 01-.521-3.507c0-1.553.295-3.036.831-4.398C3.387 10.203 4.167 9.75 5 9.75h1.053c.472 0 .745.556.5.96a8.958 8.958 0 00-1.302 4.665c0 1.194.232 2.333.654 3.375z" />
+                              </svg>
+
+                            <p>like</p>
+                        </div>
+                        <div class="comment flex items-center gap-2 px-3 rounded-lg py-2 hover:bg-neutral-500 w-full duration-300 cursor-pointer">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12.76c0 1.6 1.123 2.994 2.707 3.227 1.068.157 2.148.279 3.238.364.466.037.893.281 1.153.671L12 21l2.652-3.978c.26-.39.687-.634 1.153-.67 1.09-.086 2.17-.208 3.238-.365 1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0012 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018z" />
+                              </svg>
+
+                            <p>comment</p>
+                        </div>
+                        <div class="share flex items-center gap-2 px-3 rounded-lg py-2 hover:bg-neutral-500 w-full duration-300 cursor-pointer">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M7.217 10.907a2.25 2.25 0 100 2.186m0-2.186c.18.324.283.696.283 1.093s-.103.77-.283 1.093m0-2.186l9.566-5.314m-9.566 7.5l9.566 5.314m0 0a2.25 2.25 0 103.935 2.186 2.25 2.25 0 00-3.935-2.186zm0-12.814a2.25 2.25 0 103.933-2.185 2.25 2.25 0 00-3.933 2.185z" />
+                              </svg>
+
+                            <p>share</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Third post -->
+            <div class="posts  bg-neutral-700 ">
+                <div class="posts-heading">
+                    <div class="img flex">
+                        <img class="h-10 w-10 m-2 rounded-full" src="img/shortcuts-2.jpg" alt="">
+                        <div class="post-name text-lg">
+                            <p>Programming jokes and memes</p>
+                            <div class="item flex items-center gap-2 text-lg">
+                                <p>7h</p>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M15 19.128a9.38 9.38 0 002.625.372 9.337 9.337 0 004.121-.952 4.125 4.125 0 00-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 018.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0111.964-3.07M12 6.375a3.375 3.375 0 11-6.75 0 3.375 3.375 0 016.75 0zm8.25 2.25a2.625 2.625 0 11-5.25 0 2.625 2.625 0 015.25 0z" />
+                              </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <!-- Reference -->
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M8.625 12a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H8.25m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H12m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0h-.375M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                    </div>
+                </div>
+                <h2 class="mx-4 my-2 text-lg">Fun begin here</h2>
+
+                <div class="post-body mx-auto ">
+                    <img class="w-[38vw]  mx-auto" src="/img/posts/post2.jpg" alt="">
+                </div>
+                <div class="reaction ">
+                    <div class="react-name px-3 py-2 flex justify-between">
+                        <div class="react-box flex items-center gap-1">
+                            <img class="h-6  rounded-full" src="/img/react/haha.png" alt="">
+                            <img class="h-6  rounded-full" src="/img/react/care.png" alt="">
+                            <p class="text-base"></p>
+
+                        </div>
+                        <div class="comment-count p-1">
+                            10k comments
+                        </div>
+                    </div>
+                </div>
+                <hr class="w-full my-2">
+                <div class="react-box">
+                    <div class="section flex justify-between px-4 py-3 capitalize gap-1">
+                        <div class="like flex items-center gap-2 px-3 rounded-lg py-2 hover:bg-neutral-500 w-full duration-300 cursor-pointer">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M6.633 10.5c.806 0 1.533-.446 2.031-1.08a9.041 9.041 0 012.861-2.4c.723-.384 1.35-.956 1.653-1.715a4.498 4.498 0 00.322-1.672V3a.75.75 0 01.75-.75A2.25 2.25 0 0116.5 4.5c0 1.152-.26 2.243-.723 3.218-.266.558.107 1.282.725 1.282h3.126c1.026 0 1.945.694 2.054 1.715.045.422.068.85.068 1.285a11.95 11.95 0 01-2.649 7.521c-.388.482-.987.729-1.605.729H13.48c-.483 0-.964-.078-1.423-.23l-3.114-1.04a4.501 4.501 0 00-1.423-.23H5.904M14.25 9h2.25M5.904 18.75c.083.205.173.405.27.602.197.4-.078.898-.523.898h-.908c-.889 0-1.713-.518-1.972-1.368a12 12 0 01-.521-3.507c0-1.553.295-3.036.831-4.398C3.387 10.203 4.167 9.75 5 9.75h1.053c.472 0 .745.556.5.96a8.958 8.958 0 00-1.302 4.665c0 1.194.232 2.333.654 3.375z" />
+                              </svg>
+
+                            <p>like</p>
+                        </div>
+                        <div class="comment flex items-center gap-2 px-3 rounded-lg py-2 hover:bg-neutral-500 w-full duration-300 cursor-pointer">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12.76c0 1.6 1.123 2.994 2.707 3.227 1.068.157 2.148.279 3.238.364.466.037.893.281 1.153.671L12 21l2.652-3.978c.26-.39.687-.634 1.153-.67 1.09-.086 2.17-.208 3.238-.365 1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0012 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018z" />
+                              </svg>
+
+                            <p>comment</p>
+                        </div>
+                        <div class="share flex items-center gap-2 px-3 rounded-lg py-2 hover:bg-neutral-500 w-full duration-300 cursor-pointer">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M7.217 10.907a2.25 2.25 0 100 2.186m0-2.186c.18.324.283.696.283 1.093s-.103.77-.283 1.093m0-2.186l9.566-5.314m-9.566 7.5l9.566 5.314m0 0a2.25 2.25 0 103.935 2.186 2.25 2.25 0 00-3.935-2.186zm0-12.814a2.25 2.25 0 103.933-2.185 2.25 2.25 0 00-3.933 2.185z" />
+                              </svg>
+
+                            <p>share</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center bg-blue-800 text-white py-2 px-4 rounded-md uppercase text-sm cursor-pointer hover:bg-blue-900">
+                loadmore
+            </div>
+        </div>
+    </div>
+
+    <!-- LEFT SIDE BAR -->
+    <div class="left-sidebar hidden md:block fixed top-20 left-0  p-3">
+        <nav>
+            <ul class="flex flex-col space-y-1 items-start text-sm font-[poppins]">
+                <li class="flex items-center gap-2 text-semibold text-xl px-8 py-2 rounded-xl hover:bg-neutral-500 w-full duration-300">
+                    <img class="h-6 rounded-full" src="/img/user.jpg" alt="user">
+                    <a href="#">Itachi Uchiha</a>
+                </li>
+                <li class="flex items-center gap-2 text-semibold text-xl px-8 py-2 rounded-xl hover:bg-neutral-500 w-full duration-300">
+                    <ion-icon name="person-circle-outline"></ion-icon>
+                    <a href="#">Friends</a>
+                </li>
+                <li class="flex items-center gap-2 text-semibold text-xl px-8 py-2 rounded-xl hover:bg-neutral-500 w-full duration-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m.94 3.198l.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0112 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 016 18.719m12 0a5.971 5.971 0 00-.941-3.197m0 0A5.995 5.995 0 0012 12.75a5.995 5.995 0 00-5.058 2.772m0 0a3 3 0 00-4.681 2.72 8.986 8.986 0 003.74.477m.94-3.197a5.971 5.971 0 00-.94 3.197M15 6.75a3 3 0 11-6 0 3 3 0 016 0zm6 3a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0zm-13.5 0a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0z" />
+                      </svg>
+
+                    <a href="#">Groups </a>
+                </li>
+                <li class="flex items-center gap-2 text-semibold text-xl px-8 py-2 rounded-xl hover:bg-neutral-500 w-full duration-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M16.5 3.75V16.5L12 14.25 7.5 16.5V3.75m9 0H18A2.25 2.25 0 0120.25 6v12A2.25 2.25 0 0118 20.25H6A2.25 2.25 0 013.75 18V6A2.25 2.25 0 016 3.75h1.5m9 0h-9" />
+                      </svg>
+
+                    <a href="#">Market place</a>
+                </li>
+                <li class="flex items-center gap-2 text-semibold text-xl px-8 py-2 rounded-xl hover:bg-neutral-500 w-full duration-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" d="M15.75 10.5l4.72-4.72a.75.75 0 011.28.53v11.38a.75.75 0 01-1.28.53l-4.72-4.72M4.5 18.75h9a2.25 2.25 0 002.25-2.25v-9a2.25 2.25 0 00-2.25-2.25h-9A2.25 2.25 0 002.25 7.5v9a2.25 2.25 0 002.25 2.25z" />
+                      </svg>
+
+                    <a href="#">Watch</a>
+                </li>
+                <li class="flex items-center gap-2 text-semibold text-xl px-8 py-2 rounded-xl hover:bg-neutral-500 w-full duration-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                      </svg>
+                    <a href="#">Memories</a>
+                </li>
+                <li class="flex items-center gap-2 text-semibold text-xl px-8 py-2 rounded-xl hover:bg-neutral-500 w-full duration-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 13.5L12 21m0 0l-7.5-7.5M12 21V3" />
+                      </svg>
+                    <a href="#">See more</a>
+                </li>
+
+                <hr class="w-full">
+
+                <li class="flex items-center justify-between w-full ">
+                    <span class="text-md font-light my-2 px-4">Your shortcuts</span>
+                    <a href="#" class="text-blue-900 hover:bg-neutral-600 px-3 rounded-lg duration-300">Edit</a>
+                </li>
+                <li class="flex items-center gap-2 text-semibold text-lg px-8 py-2 rounded-xl hover:bg-neutral-500 w-full duration-300">
+                    <img class="h-6 rounded-full" src="/img/shortcuts-1.jpg" alt="user">
+                    <a href="#">MEME ❤ MAYA</a>
+                </li>
+                <li class="flex items-center gap-2 text-semibold text-lg px-8 py-2 rounded-xl hover:bg-neutral-500 w-full duration-300">
+                    <img class="h-6 w-6  rounded-full" src="/img/shortcuts-2.jpg" alt="user">
+                    <a href="#">Programming Jokes & Memes</a>
+                </li>
+                <li class="flex items-center gap-2 text-semibold text-lg px-8 py-2 rounded-xl hover:bg-neutral-500 w-full duration-300">
+                    <img class="h-6 w-6  rounded-full" src="/img/shortcuts-3.jpg" alt="user">
+                    <a href="#">BOSS FEELINGS</a>
+                </li>
+                <li class="flex items-center gap-2 text-semibold text-sm px-8 py-2 rounded-xl hover:bg-neutral-500 w-full duration-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 13.5L12 21m0 0l-7.5-7.5M12 21V3" />
+                      </svg>
+                    <a href="#">See more</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- RIGHT SIDEBAR -->
+    <div class="right-sidebar hidden md:block fixed top-20 right-0 p-3">
+        <div class="sponsor-post w-[25vw] ">
+            <p class=" font-semibold text-lg">Sponsored</p>
+            <div class="img-box flex px-2 py-6 w-full items-center space-x-8 gap-2 text-semibold text-sm 2 rounded-xl hover:bg-neutral-600  duration-300
+            ">
+                <img class="h-16" src="/img/sponsorship.png" alt="sponsor-post">
+                <span>
+                    <p>Profile.co</p>
+                    <a href="#">profile.co</a>
+                </span>
+            </div>
+        </div>
+        <hr class="w-full">
+        <div class="req-segment ">
+            <div class="request-text flex items-center justify-between pr-4 my-2">
+                <span class="text-md font-light my-2 px-4">Friend Requests</span>
+                <a href="#" class="text-blue-900 hover:bg-neutral-600 px-3 rounded-lg duration-300">See all</a>
+            </div>
+            <div class="request flex items-center space-x-3 px-5 py-2 rounded-xl hover:bg-neutral-500 w-full duration-300">
+                <img class="h-10 rounded-full" src="/img/friend-req.webp" alt="red">
+                <div class="heading">
+                    <p class="font-bold my-2">Madara uchiha</p>
+                    <button class="px-6 py-2 bg-blue-900 rounded-lg">Confirm</button>
+                    <button class="px-6 py-2 bg-neutral-700 rounded-lg">Delete</button>
+                </div>
+                <p class="mb-8 text-sm">2h</p>
+            </div>
+        </div>
+        <hr class="w-full">
+        <div class="bday-segment ">
+            <div class="request-text flex items-center justify-between pr-4 my-2">
+                <span class="text-md font-light my-2 px-4">Birthdays</span>
+            </div>
+            <div class="request flex items-center space-x-3 px-5 py-1 rounded-xl hover:bg-neutral-500 w-full duration-300">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 8.25v-1.5m0 1.5c-1.355 0-2.697.056-4.024.166C6.845 8.51 6 9.473 6 10.608v2.513m6-4.87c1.355 0 2.697.055 4.024.165C17.155 8.51 18 9.473 18 10.608v2.513m-3-4.87v-1.5m-6 1.5v-1.5m12 9.75l-1.5.75a3.354 3.354 0 01-3 0 3.354 3.354 0 00-3 0 3.354 3.354 0 01-3 0 3.354 3.354 0 00-3 0 3.354 3.354 0 01-3 0L3 16.5m15-3.38a48.474 48.474 0 00-6-.37c-2.032 0-4.034.125-6 .37m12 0c.39.049.777.102 1.163.16 1.07.16 1.837 1.094 1.837 2.175v5.17c0 .62-.504 1.124-1.125 1.124H4.125A1.125 1.125 0 013 20.625v-5.17c0-1.08.768-2.014 1.837-2.174A47.78 47.78 0 016 13.12M12.265 3.11a.375.375 0 11-.53 0L12 2.845l.265.265zm-3 0a.375.375 0 11-.53 0L9 2.845l.265.265zm6 0a.375.375 0 11-.53 0L15 2.845l.265.265z" />
+                  </svg>
+
+                <p class=" my-2 font-extralight"><span class="font-bold">This.User's</span> birthday is today</p>
+            </div>
+        </div>
+        <hr class="w-full">
+        <div class="contact-section my-2">
+            <div class="contact-box flex items-center justify-between">
+                <p>Contacts</p>
+                <div class="icons flex items-center space-x-3 cursor-pointer">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" d="M15.75 10.5l4.72-4.72a.75.75 0 011.28.53v11.38a.75.75 0 01-1.28.53l-4.72-4.72M4.5 18.75h9a2.25 2.25 0 002.25-2.25v-9a2.25 2.25 0 00-2.25-2.25h-9A2.25 2.25 0 002.25 7.5v9a2.25 2.25 0 002.25 2.25z" />
+                      </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+                      </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M8.625 12a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H8.25m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H12m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0h-.375M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                      </svg>
+                </div>
+            </div>
+            <ul class="contacts space-y-2">
+                <li class="flex items-center space-x-2 my-2 hover:bg-neutral-500 w-full duration-300 cursor-pointer py-1 px-2 rounded-lg">
+                    <img class="h-8 w-8 rounded-full object-cover" src="/img/maya.jpg" alt="user">
+                    <a href="#">Sus Meeta</a>
+                </li>
+                <li class="flex items-center space-x-2 my-2 hover:bg-neutral-500 w-full duration-300 cursor-pointer py-1 px-2 rounded-lg">
+                    <img class="h-8 w-8 rounded-full" src="/img/user-1.jpg" alt="user">
+                    <a href="#">Rajesh Rana</a>
+                </li>
+
+                <li class="flex items-center space-x-2 my-2 hover:bg-neutral-500 w-full duration-300 cursor-pointer py-1 px-2 rounded-lg">
+                    <img class="h-8 w-8 rounded-full" src="/img/user2.jpg" alt="user">
+                    <a href="#">Ranjan Rana</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>

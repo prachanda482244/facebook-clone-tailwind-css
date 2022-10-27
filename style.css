@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer utilities {
+    .items {
+        @apply text-3xl text-white cursor-pointer;
+    }
+    .posts-heading {
+        @apply flex justify-between p-2 items-center space-x-1 space-y-1 text-lg;
+    }
+}
